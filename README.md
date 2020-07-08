@@ -42,7 +42,7 @@ salvando no banco. Criando id do usuário e produto com UUID e relacionado tabel
 Tendo a resposta:
 <img src="http://wilkcaetano.com.br/projeto/respota 01.PNG">
 </p>
-
+<p>
 <h4>Rota Busca Todos Usuário</h4>
 Rota com verbo http GET usada para buscar todos os usuário
 <code>http://<ip>:3001/user</code>
@@ -51,30 +51,51 @@ Essa Rota exige uma autenticação do token enviado via Header:
 
 Example: 
 <img src="http://wilkcaetano.com.br/projeto/getUserAll.PNG" />
-<p>
-Criação de usuários consite em: 
-Envio de dados como Name, Email e Password.
-Rota Recebe a solicitação processa e usa como autenticação com JWT, criação de token
-salvando no banco.
-Tendo a resposta:
-<img src="http://wilkcaetano.com.br/projeto/respota 01.PNG">
 </p>
 
-
+<p>
 <h4>Rota Busca de usuários com ID</h4>
 Rota com verbo http GET usada para buscar passando a id 
 do usuário.
-<code>http://<ip>:3001/user</code>
+<code>http://<ip>:3001/user/id</code>
 Essa Rota exige uma autenticação do token enviado via Header:
 <img src="http://wilkcaetano.com.br/projeto/auth.PNG" />
 
 Example: 
-<img src="http://wilkcaetano.com.br/projeto/getUserAll.PNG" />
-<p>
-Criação de usuários consite em: 
-Envio de dados como Name, Email e Password.
-Rota Recebe a solicitação processa e usa como autenticação com JWT, criação de token
-salvando no banco.
-Tendo a resposta:
-<img src="http://wilkcaetano.com.br/projeto/respota 01.PNG">
+<img src="http://wilkcaetano.com.br/projeto/getId.PNG" />
 </p>
+
+<h3> Rotas Produtos </h3>
+
+<h4> Rota Create Produtos </h4>
+Rota com verbo http POST usada para criação de produtos,
+rota exige autenticação.
+<code>http://<ip>:3001/products</code>
+<img src="http://wilkcaetano.com.br/projeto/auth.PNG" />
+
+Exemplo de cadastro produto:
+
+<img src="http://wilkcaetano.com.br/projeto/createProduct.PNG" />
+
+
+<h4> Rota Create Busca de todos produtos </h4>
+Rota com verbo http GET usada para busca de produtos,
+rota exige autenticação.
+<code>http://<ip>:3001/products</code>
+<img src="http://wilkcaetano.com.br/projeto/auth.PNG" />
+
+Exemplo de GET produtos:
+
+<img src="http://wilkcaetano.com.br/projeto/getall.PNG" />
+
+
+
+<h4> Rota Create Busca de produtos por ID </h4>
+Rota com verbo http GET usada para busca de produtos,
+rota exige autenticação.
+<code>http://<ip>:3001/products/:id</code>
+<img src="http://wilkcaetano.com.br/projeto/auth.PNG" />
+
+Exemplo de GET produtos:
+
+<img src="http://wilkcaetano.com.br/projeto/getIdproducts.PNG" />
