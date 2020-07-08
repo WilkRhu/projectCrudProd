@@ -1,0 +1,1 @@
+web: npm start && node_modules/.bin/knex migrate:latest --env prod
