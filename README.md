@@ -1,6 +1,6 @@
    <h1>Projeto create user e product</h1>
     <p>
-        Criação simplificado de um sistema para cadastro de autenticação de usuários
+        Criação simplificado de um sistema para cadastro de autenticação de usuários em NODE.JS
     </p>
     <h3>Summary</h3>
     <ul>
